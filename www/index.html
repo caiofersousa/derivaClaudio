@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Derivada Simples - Cálculo I</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div id="menu">
+	<span>Ferramentas</span>
+	<a href="#">Derivada</a>
+	<a href="ciclotrigonometrico/calculo-trigonometrico.html">Ciclo Trigonométrico</a>
+</div>
+<div id="container">
+	<img src="presets/ico.png" alt="">
+
+	<div class="titulo">
+		<h1>Derivada Simples de uma Equação</h1>
+		<h4>Utilizando da formula k*n*x<sup>n-1</sup></h4>
+	</div>
+
+	<hr>
+
+	<div class="demo">
+		<h2>Instruções</h2> <!-- resolucao e derivada -->
+		<p>	
+		Somente equações com X serão aceitas; <br>
+		expoentes devem ser substitúidos por "^(número)", exemplo: 2x^2; <br>
+		Por exemplo, a equação <span class="exemplo"> 3x<sup>2</sup> + 10x</span> deve ser escrita <span class="exemplo">3x^2 + 10x</span>
+
+		</p>
+	</div>
+	
+	<div class="info">
+			<input id="inputEq" type="text" placeholder=" Equação (ex.: 3x^2 - 10)">
+			<button class="btn" onclick="doit()">Derivar</button>
+	</div>
+	
+	<div id="final"></div>
+
+	<div class="btnwrap">
+		<button class="btn-large" id="resol" onclick="toggleResolucao()">Exibir resolução</button>
+	</div>
+
+	<div id="rewrap">
+	<div id="resolucao">
+		
+	  	<div id="parte1"></div>
+	  	<div id="parte2"></div>
+	  	
+  	</div>
+  	</div>
+</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>
